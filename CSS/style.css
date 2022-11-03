@@ -42,6 +42,10 @@
     --ham-color: #fff;
 }
 
+* {
+    transition: all 0.7s;
+}
+
 html {
     scroll-behavior: smooth;
 }
