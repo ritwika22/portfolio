@@ -34,11 +34,10 @@
         <div class="responsive-nav" id="responsive-side">
             <a href="javascript:void(0)" onclick="closeNavibar()" class="close close-btn"></a>
             <ul class="responsive-navigation">
-                <li class="menu-item"><a href="#">HOME</a></li>
                 <li class="menu-item"><a href="#about" onclick="closeNavibar()">ABOUT</a></li>
-                <li class="menu-item"><a href="#service" onclick="closeNavibar()">EDUCATION</a></li>
-                <li class="menu-item"><a href="#gallery" onclick="closeNavibar()">SKILLS</a></li>
-                <li class="menu-item"><a href="#gallery" onclick="closeNavibar()">PROFILES</a></li>
+                <li class="menu-item"><a href="#education" onclick="closeNavibar()">EDUCATION</a></li>
+                <li class="menu-item"><a href="#skill" onclick="closeNavibar()">SKILLS</a></li>
+                <li class="menu-item"><a href="#profile" onclick="closeNavibar()">PROFILES</a></li>
                 <li class="menu-item"><a href="#pf" onclick="closeNavibar()">PORTFOLIO</a></li>
                 <li class="menu-item"><a href="#contact" onclick="closeNavibar()">CONTACT</a></li>
             </ul>
@@ -47,12 +46,12 @@
         <a href="#" class="logo">RITWIKA</a>
         <nav>
             <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">EDUCATION</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">PROFILES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skill">SKILLS</a></li>
+                <li><a href="#profile">PROFILES</a></li>
                 <li><a href="#pf">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -73,7 +72,7 @@
     </section>
 
     <section class="body">
-        <div class="about-sec">
+        <div class="about-sec" id="about">
             <h4 class="about">ABOUT ME</h4>
             <div class="hr"></div>
             <div class="about-wrap">
@@ -109,7 +108,7 @@
             </div>
         </div>
 
-        <div class="edu-sec">
+        <div class="edu-sec" id="education">
             <h4 class="edu">EDUCATION</h4>
             <div class="hr"></div>
             <div class="edu-box">
@@ -149,7 +148,7 @@
             </div>
         </div>
 
-        <div class="skill-sec">
+        <div class="skill-sec" id="skill">
             <h4 class="edu">SKILLS</h4>
             <div class="hr"></div>
             <div class="skill-box">
@@ -232,8 +231,8 @@
             </div>
         </div>
 
-        <div class="profile-sec">
-            <div class="hr-top"></div>
+        <div class="profile-sec" id="profile">
+            <!-- <div class="hr-top"></div> -->
             <h4 class="edu prf">PROFILES</h4>
             <div class="hr"></div>
             <div class="grid-container">
@@ -273,7 +272,7 @@
         </div>
 
         <div class="portfolio-sec" id="pf">
-            <div class="hr-top"></div>
+            <!-- <div class="hr-top"></div> -->
             <h4 class="edu prf">PORTFOLIO</h4>
             <div class="hr"></div>
             <div class="port-grid-container">
@@ -297,7 +296,7 @@
 
     </section>
 
-    <section class="footer">
+    <section class="footer" id="contact">
 
         <div class="contact-sec">
             <h4 class="edu prf">CONTACT ME</h4>

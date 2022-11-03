@@ -478,7 +478,7 @@ address {
     text-align: center;
     color: var(--text-color);
     margin-bottom: 55px;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 .edu-box {
@@ -602,7 +602,7 @@ address {
 }
 
 .prf {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .grid-container {
@@ -969,7 +969,7 @@ address {
 
 
 .footer {
-    margin-top: 150px;
+    margin-top: 110px;
     background-color: var(--footer-color);
 }
 
@@ -1003,7 +1003,7 @@ address {
 .inp-div {
     display: flex;
     width: 100%;
-    /* gap: 15px; */
+    gap: 15px;
 }
 
 .input-style {
@@ -1226,7 +1226,8 @@ address {
 
     .edu-box {
         flex-direction: column;
-        gap: 70px;
+        gap: 50px;
+        margin-top: 30px;
     }
 
     .details {
@@ -1235,7 +1236,8 @@ address {
 
     .skill-box {
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 50px 20px;
+        padding-bottom: 0 !important;
     }
 
     .column-1,
@@ -1248,7 +1250,7 @@ address {
     }
 
     .prf {
-        margin-top: 30px;
+        margin-top: 50px;
     }
     .grid-container{
         margin-top: 25px !important;
