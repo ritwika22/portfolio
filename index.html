@@ -6,17 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ritwika's Portfolio</title>
+    <link rel="stylesheet" href="CSS/loader.css">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preload" href="images/port-bg.jpg.png" as="image">
+    <link rel="preload" href="images/port-bg-dark.png" as="image">
 </head>
+<div id="loader">
+    <div></div>
+</div>
 
 <body>
-    <a href="#"><div class="scroll"><i class="fas fa-angle-up"></i></div></a>
+    <a href="#">
+        <div class="scroll"><i class="fas fa-angle-up"></i></div>
+    </a>
     <header id="head" class="header-sec">
+
+        <div class="hamburger" onclick="openNav()">
+            <div class="ham-one"></div>
+            <div class="ham-two"></div>
+            <div class="ham-three"></div>
+        </div>
+        <div class="responsive-nav" id="responsive-side">
+            <a href="javascript:void(0)" onclick="closeNavibar()" class="close close-btn"></a>
+            <ul class="responsive-navigation">
+                <li class="menu-item"><a href="#">HOME</a></li>
+                <li class="menu-item"><a href="#about" onclick="closeNavibar()">ABOUT</a></li>
+                <li class="menu-item"><a href="#service" onclick="closeNavibar()">EDUCATION</a></li>
+                <li class="menu-item"><a href="#gallery" onclick="closeNavibar()">SKILLS</a></li>
+                <li class="menu-item"><a href="#gallery" onclick="closeNavibar()">PROFILES</a></li>
+                <li class="menu-item"><a href="#pf" onclick="closeNavibar()">PORTFOLIO</a></li>
+                <li class="menu-item"><a href="#contact" onclick="closeNavibar()">CONTACT</a></li>
+            </ul>
+        </div>
+
         <a href="#" class="logo">RITWIKA</a>
         <nav>
             <ul>
@@ -24,7 +51,7 @@
                 <li><a href="#">EDUCATION</a></li>
                 <li><a href="#">SKILLS</a></li>
                 <li><a href="#">PROFILES</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#pf">PORTFOLIO</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
@@ -245,14 +272,14 @@
             </div>
         </div>
 
-        <div class="portfolio-sec">
+        <div class="portfolio-sec" id="pf">
             <div class="hr-top"></div>
             <h4 class="edu prf">PORTFOLIO</h4>
             <div class="hr"></div>
             <div class="port-grid-container">
-                <a href="https://pizzaria-demo.netlify.app/" target="_blank"><div class="port-grid-one">
+                <div class="port-grid-one">
                     <img src="images/p1.jpg" alt="">
-                </div></a>
+                </div>
                 <div class="port-grid-two">
                     <img src="images/p3.jpg" alt="">
                 </div>
@@ -288,7 +315,8 @@
                             <!-- <input type="text" placeholder="Name*" required>
                             <input type="email" placeholder="Email*" required><br> -->
                             <input type="text" class="input-style" placeholder="Subject"><br>
-                            <textarea placeholder="Message" name="" class="input-style" cols="30" rows="3"></textarea><br>
+                            <textarea placeholder="Message" name="" class="input-style" cols="30"
+                                rows="3"></textarea><br>
                             <button>Submit</button>
                         </div>
                     </form>
@@ -307,7 +335,8 @@
                                 <a href="mailto:ritwika.chakraborty2014@gmail.com">ritwika.chakraborty2014@gmail.com</a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/profile.php?id=100008542993259"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100008542993259"><i
+                                        class="fab fa-facebook-f"></i></a>
                                 <a href="https://twitter.com/_Ritwika2"><i class="fab fa-twitter"></i></a>
                                 <a href="https://wa.me/919062014861"><i class="fab fa-whatsapp"></i></a>
                                 <a href="https://www.instagram.com/t.i.t.l.a.i/"><i class="fab fa-instagram"></i></a>
@@ -318,7 +347,8 @@
             </div>
 
         </div>
-        <p class="copyright">© Copyright Ritwika's Portfolio. Design And Developed By <a href="#">Ritwika Chakraborty</a></p>
+        <p class="copyright">© Copyright Ritwika's Portfolio. Design And Developed By <a href="#">Ritwika
+                Chakraborty</a></p>
 
     </section>
 

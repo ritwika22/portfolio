@@ -68,3 +68,32 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+
+
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+          "body").style.visibility = "hidden";
+        document.querySelector(
+          "#loader").style.visibility = "visible";
+          document.querySelector(
+            "header").style.visibility = "hidden";
+    } else {
+        document.querySelector(
+          "#loader").style.display = "none";
+        document.querySelector(
+          "body").style.visibility = "visible";
+        document.querySelector(
+            "header").style.visibility = "visible";
+    }
+  };
+
+
+  function openNav() {
+    document.getElementById("responsive-side").style.width = "100%";
+    // document.getElementById("responsive-side").style.height = "100%";
+}
+function closeNavibar() {
+    document.getElementById("responsive-side").style.width = "0%";
+    // document.getElementById("responsive-side").style.height = "0%";
+}
