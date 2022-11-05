@@ -6,6 +6,10 @@ function displace_banner() {
     bann.style.marginTop = (height + "px");
 }
 
+function linkOpen(link){
+    window.open(link, "_blank");
+}
+
 displace_banner();
 
 (function () {

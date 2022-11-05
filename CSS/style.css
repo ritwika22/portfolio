@@ -13,7 +13,7 @@
     --placeholder-color: #636a82;
     --footer-color: #f9fbfd;
     --body-color: #fff;
-    --background-image: url(../images/port-bg.jpg.png);
+    --background-image: url(../images/port-bg-light.jpg);
     --form-bg-clr: #fff;
     --grid-bg-clr: rgba(47, 22, 78, 0.751);
     --caret-clr: #222;
@@ -34,7 +34,7 @@
     --placeholder-color: #dbdde1;
     --footer-color: #000;
     --body-color: #171717;
-    --background-image: url(../images/port-bg-dark.png);
+    --background-image: url(../images/port-bg-dark.jpg);
     --form-bg-clr: #111;
     --grid-bg-clr: rgba(55, 38, 0, 0.779);
     --caret-clr: #fff;
@@ -761,6 +761,7 @@ address {
 }
 
 .port-grid-container {
+    position: relative;
     margin-top: 100px !important;
     width: 75%;
     margin: 0 auto;
@@ -780,30 +781,35 @@ address {
     grid-area: one;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .port-grid-two {
     grid-area: two;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .port-grid-three {
     grid-area: three;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .port-grid-four {
     grid-area: four;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .port-grid-five {
     grid-area: five;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .port-grid-one>img,
@@ -842,7 +848,7 @@ address {
 
 .port-grid-two::before {
     position: absolute;
-    content: 'WEB DESIGN';
+    content: 'HOICHOI';
     color: var(--head-color);
     display: flex;
     justify-content: center;
@@ -858,7 +864,7 @@ address {
 
 .port-grid-three::before {
     position: absolute;
-    content: 'WEB DESIGN';
+    content: 'BAKERY';
     color: var(--head-color);
     display: flex;
     justify-content: center;
@@ -874,7 +880,7 @@ address {
 
 .port-grid-four::before {
     position: absolute;
-    content: 'WEB DESIGN';
+    content: 'TRAVEL HUT';
     color: var(--head-color);
     display: flex;
     justify-content: center;
@@ -890,7 +896,7 @@ address {
 
 .port-grid-five::before {
     position: absolute;
-    content: 'WEB DESIGN';
+    content: 'CAR BANK';
     color: var(--head-color);
     display: flex;
     justify-content: center;
@@ -918,16 +924,16 @@ address {
 }
 
 .port-grid-one {
-    background-image: url(../images/p1.jpg.png);
+    background-image: url(../images/Pizza.jpg);
     background-position: center;
     background-size: 105%;
     background-repeat: no-repeat;
     transition: 0.3s;
-    border: 5px solid var(--primary-color);
+    /* border: 5px solid var(--primary-color); */
 }
 
 .port-grid-two {
-    background-image: url(../images/p3.jpg);
+    background-image: url(../images/Hoichoi.jpg);
     background-position: center;
     background-size: 105%;
     background-repeat: no-repeat;
@@ -935,7 +941,7 @@ address {
 }
 
 .port-grid-three {
-    background-image: url(../images/p4.jpg);
+    background-image: url(../images/bakery.jpg);
     background-position: center;
     background-size: 105%;
     background-repeat: no-repeat;
@@ -943,7 +949,7 @@ address {
 }
 
 .port-grid-four {
-    background-image: url(../images/p2.jpg);
+    background-image: url(../images/TravelHut.jpg);
     background-position: center;
     background-size: 105%;
     background-repeat: no-repeat;
@@ -951,7 +957,7 @@ address {
 }
 
 .port-grid-five {
-    background-image: url(../images/p5.jpg);
+    background-image: url(../images/CarBank.jpg);
     background-position: center;
     background-size: 105%;
     background-repeat: no-repeat;
@@ -974,7 +980,20 @@ address {
     opacity: 0;
 }
 
+.view{
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
 
+.view>a{
+    color: var(--head-color);
+    text-decoration: none;
+    font-size: 20px;
+}
 
 .footer {
     margin-top: 110px;
