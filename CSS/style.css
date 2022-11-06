@@ -987,14 +987,18 @@ address {
     background-color: var(--primary-color);
     border-radius: 10px;
     padding: 10px 20px;
+    width: fit-content;
 }
 
 .view>a{
     color: var(--head-color);
     text-decoration: none;
     font-size: 20px;
+    white-space: nowrap;
 }
-
+.view:hover{
+    background-color: var(--dark-primary-color);
+}
 .footer {
     margin-top: 110px;
     background-color: var(--footer-color);
@@ -1310,8 +1314,12 @@ address {
             'five';
         width: 60%;
     }
+    .view{
+        left: 50%;
+        transform: translate(-50%);
+    }
     .footer{
-        margin-top: 85px;
+        margin-top: 100px;
     }
     .contact-box{
         flex-direction: column;
@@ -1516,7 +1524,9 @@ address {
 
     .footer {
         padding-bottom: 30px;
-        margin-top: 40px;
+        margin-top: 100px;
     }
-
+    .view>a{
+        font-size: 15px;
+    }
 }
