@@ -50,10 +50,6 @@ html {
     scroll-behavior: smooth;
 }
 
-*{
-    transition: all 0.7s;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -677,11 +673,13 @@ address {
 .grid-wrap>a {
     color: var(--icon-color);
     font-size: 28px;
+    transition: 0.1s ease-in-out;
 }
 
 .grid-wrap>p {
     color: var(--icon-color);
     font-size: 17px;
+    transition: 0.1s ease-in-out;
 }
 
 /* .grid-wrap>a:hover,
